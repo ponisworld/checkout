@@ -27,35 +27,105 @@
 
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+    <h1>Checkout</h1>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <main class="gridTwoCol">
+      <article id="firstCol">
+        <section id="contact">
+
+          <h2>Contact Information</h2>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email">
+
+          <label for="tel">Phone</label>
+          <input type="tel" id="tel" name="tel">
+
+        </section>
+        <section id="shipping">
+
+          <h2>Shipping Address</h2>
+
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name">
+
+          <label for="add">Address</label>
+          <input type="text" name="add" id="add">
+
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+
+          <div>
+            <section>
+              <label for="cont">Continent</label>
+              <select name="cont" id="cont">
+                <option value="1">Asia</option>
+                <option value="2">America</option>
+                <option value="3">Africa</option>
+                <option value="4">Europa</option>
+                <option value="5">Oceania</option>
+              </select>
+            </section>
+            <section>
+              <label for="postal">Postal Code</label>
+              <input type="number" name="postal" id="postal">
+            </section>
+          </div>
+          <label>
+            <input type="checkbox" name="save" id="save">
+            Save this information for next time
+         </label>
+         <input type="submit" value="Continue">
+        </section>
+      </article>
+
+      <aside id="secondCol" class="flexColumn">
+        <article id="bag" class="gridTwoCol">
+          <img src="assets/img/photo1.png" alt="Vintage Backbag">
+
+          <div class="flexColumn">
+            <h3>Vintage Backbag</h3>
+            <div class="flex">
+              <h4>$54.99</h4>
+              <h5><s>$94.99</s></h5>
+            </div>
+
+    <!--INSERTAR AQUÍ LOS BOTONES + Y - Y EL 1-->
+
+
+          </div>
+        </article>
+
+        <article id="shoes" class="gridTwoCol">
+          <img src="assets/img/photo2.png" alt="Levi Shoes">
+
+          <div class="flexColumn">
+            <h3>Vintage Backbag</h3>
+            <div class="flex">
+              <h4>$74.99</h4>
+              <h5><s>$124.99</s></h5>
+            </div>
+
+    <!--INSERTAR AQUÍ LOS BOTONES + Y - Y EL 1-->
+
+
+          </div>
+        </article>
+        <hr>
+        <section>
+          <h2>Shipping</h2>
+          <p>$19</p>
+        </section>
+        <section>
+          <h2>Total</h2>
+          <p>$148.98</p>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      created by <a href=""><u><b>Andrea Bellver García</b></u></a> - <a href="">devChallenges.io</a>
+    </footer>
   </body>
 </html>
