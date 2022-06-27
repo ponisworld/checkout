@@ -16,10 +16,12 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -40,7 +42,7 @@
           <input placeholder="Enter your email..." type="email" name="email" id="email">
 
           <label for="tel">Phone</label>
-          <input type="tel" id="tel" name="tel">
+          <input placeholder="Enter your phone..." type="tel" id="tel" name="tel">
 
         </section>
         <section id="shipping">
@@ -48,18 +50,19 @@
           <h2>Shipping Address</h2>
 
           <label for="name">Full name</label>
-          <input type="text" name="name" id="name">
+          <input placeholder="Enter your name..." type="text" name="name" id="name">
 
           <label for="add">Address</label>
-          <input type="text" name="add" id="add">
+          <input placeholder="Your address..." type="text" name="add" id="add">
 
           <label for="city">City</label>
-          <input type="text" name="city" id="city">
+          <input placeholder="Your city..." type="text" name="city" id="city">
 
           <div class="gridTwoCol">
             <section>
               <label for="cont">Continent</label>
               <select name="cont" id="cont">
+                <option disabled selected>Your country...</option>
                 <option value="1">Asia</option>
                 <option value="2">America</option>
                 <option value="3">Africa</option>
@@ -69,7 +72,7 @@
             </section>
             <section>
               <label for="postal">Postal Code</label>
-              <input type="number" name="postal" id="postal">
+              <input placeholder="Your postal code.." type="number" name="postal" id="postal">
             </section>
           </div>
           <label>
